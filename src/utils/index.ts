@@ -1,8 +1,8 @@
-import { TimeLeft } from "../types";
+import { Timer } from "../types";
 
 export const calculateTimeLeft = (finish: number) => {
   const difference = finish - +new Date();
-  let timeLeft: TimeLeft = {};
+  let timeLeft: Timer = {};
 
   if (difference > 0) {
     timeLeft = {
